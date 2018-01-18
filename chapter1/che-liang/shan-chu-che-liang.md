@@ -1,0 +1,48 @@
+#### 删除车辆
+
+##### 接口地址
+
+```
+/app/bsVehicle/delete/{vehicleId}
+```
+
+##### 请求方式
+
+POST
+
+##### 接口描述
+
+##### 请求参数
+
+格式：JSON
+
+| 参数名 | 类型 | 描述 | 是否必填 |
+| --- | --- | --- | --- |
+|vehicleId| Long| 车辆ID | TRUE|
+
+##### 响应参数
+
+格式：JSON
+
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| status| Integer | 状态：1：成功；0：失败 |
+| message| String | 响应消息 |
+| data| JSON字符串| 响应数据 |
+| vehicleId| Long| 车辆ID |
+##### 调用示例
+
+```
+url:/app/bsVehicle/delete/20000055
+```
+
+##### 响应示例
+
+``` json
+{
+    "status": 1,
+    "data":"",
+    "message": "删除数据成功"
+}
+```
+
