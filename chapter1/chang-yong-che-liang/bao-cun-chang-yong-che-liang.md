@@ -1,9 +1,9 @@
-#### 保存车辆
+#### 保存常用车辆
 
 ##### 接口地址
 
 ```
-/app/bsVehicle/save
+/app/bsVehicleUsing/save
 ```
 
 ##### 请求方式
@@ -34,11 +34,11 @@ POST
 | status| Integer | 状态：1：成功；0：失败 |
 | message| String | 响应消息 |
 | data| JSON字符串| 响应数据 |
-| vehicleId| Long| 车辆ID |
+| vehicleId| Long| 常用车辆ID |
 ##### 调用示例
 
 ```
-url:/app/bsVehicle/save
+url:/app/bsVehicleUsing/save
 
 参数:
 

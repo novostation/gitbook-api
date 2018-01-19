@@ -1,9 +1,9 @@
-#### 保存车辆
+#### 更新常用车辆
 
 ##### 接口地址
 
 ```
-/app/bsVehicle/save
+/app/bsVehicleUsing/update
 ```
 
 ##### 请求方式
@@ -18,6 +18,7 @@ POST
 
 | 参数名 | 类型 | 描述 | 是否必填 |
 | --- | --- | --- | --- |
+| vehicleId| Long| 常用车辆iD |TRUE|
 | numberPlate| String | 车牌号 | TRUE|
 | numberPlateColor| String | 车牌颜色 | TRUE|
 | vehicleType| String |  车辆类别  | TRUE|
@@ -34,22 +35,24 @@ POST
 | status| Integer | 状态：1：成功；0：失败 |
 | message| String | 响应消息 |
 | data| JSON字符串| 响应数据 |
-| vehicleId| Long| 车辆ID |
+| vehicleId| Long| 常用车辆iD |
 ##### 调用示例
 
 ```
-url:/app/bsVehicle/save
+url:/app/bsVehicleUsing/update
+
 
 参数:
 
-{       
+{
+        "vehicleId": 20000055,
         "numberPlate": "321",
         "numberPlateColor": "231",
         "vehicleType": "1",
         "vehicleCategory": "",
         "approvedWeight": 132,
-        "approvedVolume": 312,       
-        "transRange": "31"       
+        "approvedVolume": 312,
+        "transRange": "31"
 }
 ```
 
@@ -60,8 +63,8 @@ url:/app/bsVehicle/save
 ```
 {
     "status": 1,
-    "data": 6970,
-    "message": "保存数据成功"
+    "data": 20000055,
+    "message": "更新数据成功"
 }
 ```
 
