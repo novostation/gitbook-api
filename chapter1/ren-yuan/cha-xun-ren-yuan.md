@@ -21,6 +21,7 @@ POST
 | pageNum| Integer | 页码| TRUE |
 | pageSize| Integer | 每页最大数量| TRUE |
 | employeeName| String| 人员姓名 |FALSE|
+| employeeType| Integer | 从业人员类型1：驾驶员；2：押运员；3：驾驶员和押运员 | FALSE|
 
 ##### 响应参数
 

@@ -1,4 +1,4 @@
-#### 获取车辆
+#### 获取常用车辆
 
 ##### 接口地址
 
@@ -29,7 +29,7 @@ POST
 | status| Integer | 状态：1：成功；0：失败 |
 | message| String | 响应消息 |
 | data| JSON字符串| 响应数据 |
-| vehicleId| Long| 车辆iD |
+| vehicleId| Long| 常用车辆iD |
 | numberPlate| String | 车牌号 | 
 | numberPlateColor| String | 车牌颜色 | 
 | vehicleType| String |  车辆类别  | 
