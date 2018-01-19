@@ -1,9 +1,9 @@
-#### 查询常用危化品
+#### 查询基础危化品
 
 ##### 接口地址
 
 ```
-/app/bsChemical/listChemicalAndChemicalUsing
+/app/bsChemical/listPage
 ```
 
 ##### 请求方式
@@ -32,13 +32,15 @@ POST
 | id| Long| 常用危化品ID |
 | chemicalId| Long| 危化品ID |
 | chemicalName| String | 危化品名称 |
-| chemicalAliasUsing| String |常用危化品别名 |
+| packLevel| String |常用危化品别名 |
 | unionCode| String | 联合国编码 |
+| packLevel| Integer | 包装级别 | 
+| packSpec| String | 包装规格| 
 
 ##### 调用示例
 
 ```
-url:/app/bsChemical/listChemicalAndChemicalUsing
+url:/app/bsChemical/listPage
 
 参数:{pageNum:1,pageSize:1}
 ```
@@ -53,8 +55,8 @@ url:/app/bsChemical/listChemicalAndChemicalUsing
         "size": 1,
         "startRow": 1,
         "endRow": 1,
-        "total": 9,
-        "pages": 9,
+        "total": 2916,
+        "pages": 2916,
         "list": [
             {
                 "chemicalId": 2924,
@@ -84,10 +86,7 @@ url:/app/bsChemical/listChemicalAndChemicalUsing
                 "auditStatus": "",
                 "casName": "",
                 "secondaryDanger": "",
-                "remark": "",
-                "id": 64,
-                "companyId": 20000004,
-                "chemicalAliasUsing": "溴甲基丙烷"
+                "remark": ""
             }
         ],
         "prePage": 0,
