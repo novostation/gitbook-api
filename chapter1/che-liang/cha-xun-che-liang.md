@@ -21,8 +21,7 @@ POST
 | pageNum| Integer | 页码| TRUE |
 | pageSize| Integer | 每页最大数量| TRUE |
 | numberPlate| String| 车牌号 |FALSE|
-
-
+| vehicleCategoryCode| Integer | 1:货车  2：牵引车 ：3 : 挂车 | FALSE|
 
 ##### 响应参数
 
