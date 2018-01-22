@@ -24,6 +24,7 @@ POST
 | vehicleType| String |  车辆类别  | TRUE|
 | approvedWeight| Float| 核定载重量 | FALSE |
 | approvedVolume| Float | 核定运输体积| FALSE |
+| vehicleCategoryCode| Integer | 1:货车  2：牵引车 ：3 : 挂车 |TRUE|
 | transRange| String | 经营范围 | FALSE |
 
 ##### 响应参数
@@ -52,6 +53,7 @@ url:/app/bsVehicleUsing/update
         "vehicleCategory": "",
         "approvedWeight": 132,
         "approvedVolume": 312,
+        "vehicleCategoryCode":1,
         "transRange": "31"
 }
 ```

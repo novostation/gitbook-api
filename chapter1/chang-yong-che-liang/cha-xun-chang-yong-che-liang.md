@@ -39,6 +39,7 @@ POST
 | vehicleType| String |  车辆类别  | 
 | approvedWeight| Float| 核定载重量 | 
 | approvedVolume| Float | 核定运输体积|
+| vehicleCategoryCode| Integer | 1:货车  2：牵引车 ：3 : 挂车 |
 | transRange| String | 经营范围 | 
 
 ##### 调用示例

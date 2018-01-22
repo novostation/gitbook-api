@@ -24,6 +24,7 @@ POST
 | approvedWeight| Float| 核定载重量 | FALSE |
 | approvedVolume| Float | 核定运输体积| FALSE |
 | transRange| String | 经营范围 | FALSE |
+| vehicleCategoryCode| Integer | 1:货车  2：牵引车 ：3 : 挂车 | TRUE|
 
 ##### 响应参数
 
@@ -35,6 +36,7 @@ POST
 | message| String | 响应消息 |
 | data| JSON字符串| 响应数据 |
 | vehicleId| Long| 车辆ID |
+
 ##### 调用示例
 
 ```

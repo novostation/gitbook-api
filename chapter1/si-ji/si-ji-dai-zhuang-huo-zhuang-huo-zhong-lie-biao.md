@@ -18,8 +18,7 @@ POST
 
 | 参数名 | 类型 | 描述 | 是否必填 |
 | --- | --- | --- | --- |
-| billUnitId| String| 待装货装货中标识| TRUE |
-| billAddressId| String| 运单号| FALSE|
+| billNo| String| 运单号| TRUE |
 | chemical| String| JSON数组 |TRUE |
 | id| String| 货物ID |TRUE |
 | weight| String| 重量 |TRUE |
@@ -46,8 +45,7 @@ url:/app/confirm/driverLoadConfirm
 ``` json
 {
 	"data": {
-		"billUnitId": "32645",
-		"billAddressId": "33034",
+		"billNo": "32645",
 		"chemical": [{
 			"id": "35472",
 			"weight": "5",

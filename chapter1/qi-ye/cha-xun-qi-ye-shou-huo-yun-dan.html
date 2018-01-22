@@ -174,7 +174,7 @@
                 <a href="../si-ji/si-ji-dai-xie-huo-lie-biao.html">
             
                     
-                    司机卸货列表
+                    司机待卸货列表
             
                 </a>
             
@@ -1105,6 +1105,11 @@
 <td>&#x8D27;&#x7269;&#x4FE1;&#x606F;</td>
 </tr>
 <tr>
+<td>id</td>
+<td>Long</td>
+<td>&#x8D27;&#x7269;&#x4E3B;&#x952E;ID</td>
+</tr>
+<tr>
 <td>chemicalName</td>
 <td>String</td>
 <td>&#x8D27;&#x7269;&#x540D;&#x79F0;</td>
@@ -1145,23 +1150,33 @@
     <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-number">1</span>,
     <span class="hljs-string">&quot;data&quot;</span>: {
         <span class="hljs-string">&quot;pageNum&quot;</span>: <span class="hljs-number">1</span>,
-        <span class="hljs-string">&quot;pageSize&quot;</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-string">&quot;pageSize&quot;</span>: <span class="hljs-number">10</span>,
         <span class="hljs-string">&quot;size&quot;</span>: <span class="hljs-number">1</span>,
         <span class="hljs-string">&quot;startRow&quot;</span>: <span class="hljs-number">1</span>,
         <span class="hljs-string">&quot;endRow&quot;</span>: <span class="hljs-number">1</span>,
-        <span class="hljs-string">&quot;total&quot;</span>: <span class="hljs-number">34</span>,
-        <span class="hljs-string">&quot;pages&quot;</span>: <span class="hljs-number">34</span>,
+        <span class="hljs-string">&quot;total&quot;</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">&quot;pages&quot;</span>: <span class="hljs-number">1</span>,
         <span class="hljs-string">&quot;list&quot;</span>: [
             {
-                <span class="hljs-string">&quot;billNo&quot;</span>: <span class="hljs-string">&quot;20171124313090&quot;</span>,
-                <span class="hljs-string">&quot;unitName&quot;</span>: <span class="hljs-string">&quot;&#x63ED;&#x9633;&#x5E02;&#x5FE0;&#x6CF0;&#x6C14;&#x4F53;&#x5382;&#x6709;&#x9650;&#x516C;&#x53F8;&#x666E;&#x5B81;&#x5E02;&#x5357;&#x6EAA;&#x9547;&#x540E;&#x5BE8;&#x6751;&#x72EE;&#x5C3E;&#x5C71;&quot;</span>,
-                <span class="hljs-string">&quot;loadCheckTime&quot;</span>: <span class="hljs-string">&quot;0001-01-01 00:00:00&quot;</span>,
+                <span class="hljs-string">&quot;billNo&quot;</span>: <span class="hljs-string">&quot;20180120293032&quot;</span>,
+                <span class="hljs-string">&quot;unitName&quot;</span>: <span class="hljs-string">&quot;&#x5E7F;&#x4E1C;&#x80DC;&#x6377;&#x6D88;&#x9632;&#x79D1;&#x6280;&#x6709;&#x9650;&#x516C;&#x53F8;&quot;</span>,
+                <span class="hljs-string">&quot;loadCheckTime&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
                 <span class="hljs-string">&quot;ckeckTime&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
                 <span class="hljs-string">&quot;dyBillAddressChemicalDtoList&quot;</span>: [
                     {
-                        <span class="hljs-string">&quot;chemicalName&quot;</span>: <span class="hljs-string">&quot;&#x6C27;[&#x6DB2;&#x5316;&#x7684;]&quot;</span>,
+                        <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">36600</span>,
+                        <span class="hljs-string">&quot;chemicalName&quot;</span>: <span class="hljs-string">&quot;&#x522B;&#x540D;1&quot;</span>,
                         <span class="hljs-string">&quot;chemicalUnit&quot;</span>: <span class="hljs-string">&quot;&#x5428;&quot;</span>,
-                        <span class="hljs-string">&quot;checkWeight&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+                        <span class="hljs-string">&quot;checkWeight&quot;</span>: <span class="hljs-number">5</span>,
+                        <span class="hljs-string">&quot;checkVolume&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+                        <span class="hljs-string">&quot;loadCheckWeight&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+                        <span class="hljs-string">&quot;loadCheckVolume&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+                    },
+                    {
+                        <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">36601</span>,
+                        <span class="hljs-string">&quot;chemicalName&quot;</span>: <span class="hljs-string">&quot;&#x522B;&#x540D;2&quot;</span>,
+                        <span class="hljs-string">&quot;chemicalUnit&quot;</span>: <span class="hljs-string">&quot;&#x5428;&quot;</span>,
+                        <span class="hljs-string">&quot;checkWeight&quot;</span>: <span class="hljs-number">5</span>,
                         <span class="hljs-string">&quot;checkVolume&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
                         <span class="hljs-string">&quot;loadCheckWeight&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
                         <span class="hljs-string">&quot;loadCheckVolume&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
@@ -1170,26 +1185,19 @@
             }
         ],
         <span class="hljs-string">&quot;prePage&quot;</span>: <span class="hljs-number">0</span>,
-        <span class="hljs-string">&quot;nextPage&quot;</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">&quot;nextPage&quot;</span>: <span class="hljs-number">0</span>,
         <span class="hljs-string">&quot;isFirstPage&quot;</span>: <span class="hljs-literal">true</span>,
-        <span class="hljs-string">&quot;isLastPage&quot;</span>: <span class="hljs-literal">false</span>,
+        <span class="hljs-string">&quot;isLastPage&quot;</span>: <span class="hljs-literal">true</span>,
         <span class="hljs-string">&quot;hasPreviousPage&quot;</span>: <span class="hljs-literal">false</span>,
-        <span class="hljs-string">&quot;hasNextPage&quot;</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-string">&quot;hasNextPage&quot;</span>: <span class="hljs-literal">false</span>,
         <span class="hljs-string">&quot;navigatePages&quot;</span>: <span class="hljs-number">8</span>,
         <span class="hljs-string">&quot;navigatepageNums&quot;</span>: [
-            <span class="hljs-number">1</span>,
-            <span class="hljs-number">2</span>,
-            <span class="hljs-number">3</span>,
-            <span class="hljs-number">4</span>,
-            <span class="hljs-number">5</span>,
-            <span class="hljs-number">6</span>,
-            <span class="hljs-number">7</span>,
-            <span class="hljs-number">8</span>
+            <span class="hljs-number">1</span>
         ],
         <span class="hljs-string">&quot;navigateFirstPage&quot;</span>: <span class="hljs-number">1</span>,
-        <span class="hljs-string">&quot;navigateLastPage&quot;</span>: <span class="hljs-number">8</span>,
+        <span class="hljs-string">&quot;navigateLastPage&quot;</span>: <span class="hljs-number">1</span>,
         <span class="hljs-string">&quot;firstPage&quot;</span>: <span class="hljs-number">1</span>,
-        <span class="hljs-string">&quot;lastPage&quot;</span>: <span class="hljs-number">8</span>
+        <span class="hljs-string">&quot;lastPage&quot;</span>: <span class="hljs-number">1</span>
     },
     <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;&#x6210;&#x529F;&quot;</span>
 }
@@ -1237,7 +1245,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"司机待确认装货列表","level":"1.2.1.2","depth":3,"next":{"title":"司机装货确认","level":"1.2.1.3","depth":3,"path":"chapter1/si-ji/si-ji-dai-zhuang-huo-zhuang-huo-zhong-lie-biao.md","ref":"chapter1/si-ji/si-ji-dai-zhuang-huo-zhuang-huo-zhong-lie-biao.md","articles":[]},"previous":{"title":"司机运单查询","level":"1.2.1.1","depth":3,"path":"chapter1/si-ji/si-ji-yun-dan-cha-xun.md","ref":"chapter1/si-ji/si-ji-yun-dan-cha-xun.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/qi-ye/cha-xun-qi-ye-shou-huo-yun-dan.md","mtime":"2018-01-18T01:08:50.556Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-20T08:57:03.352Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"司机待确认装货列表","level":"1.2.1.2","depth":3,"next":{"title":"司机装货确认","level":"1.2.1.3","depth":3,"path":"chapter1/si-ji/si-ji-dai-zhuang-huo-zhuang-huo-zhong-lie-biao.md","ref":"chapter1/si-ji/si-ji-dai-zhuang-huo-zhuang-huo-zhong-lie-biao.md","articles":[]},"previous":{"title":"司机运单查询","level":"1.2.1.1","depth":3,"path":"chapter1/si-ji/si-ji-yun-dan-cha-xun.md","ref":"chapter1/si-ji/si-ji-yun-dan-cha-xun.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/qi-ye/cha-xun-qi-ye-shou-huo-yun-dan.md","mtime":"2018-01-20T09:48:19.039Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-22T01:24:01.393Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

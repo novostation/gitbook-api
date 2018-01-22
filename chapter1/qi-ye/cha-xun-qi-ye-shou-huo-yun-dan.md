@@ -38,6 +38,7 @@ POST
 | loadCheckTime| String| 司机确认时间 |
 | ckeckTime| String| 企业确认时间 |
 | dyBillAddressChemicalDtoList| JSON数组| 货物信息 |
+| id| Long| 货物主键ID |
 | chemicalName| String| 货物名称 |
 | chemicalUnit| String| 货物单位 |
 | checkWeight| String| 企业确认重量 |
@@ -59,23 +60,33 @@ url:/app/confirm/driverLoadConfirmList
     "status": 1,
     "data": {
         "pageNum": 1,
-        "pageSize": 1,
+        "pageSize": 10,
         "size": 1,
         "startRow": 1,
         "endRow": 1,
-        "total": 34,
-        "pages": 34,
+        "total": 2,
+        "pages": 1,
         "list": [
             {
-                "billNo": "20171124313090",
-                "unitName": "揭阳市忠泰气体厂有限公司普宁市南溪镇后寨村狮尾山",
-                "loadCheckTime": "0001-01-01 00:00:00",
+                "billNo": "20180120293032",
+                "unitName": "广东胜捷消防科技有限公司",
+                "loadCheckTime": "",
                 "ckeckTime": "",
                 "dyBillAddressChemicalDtoList": [
                     {
-                        "chemicalName": "氧[液化的]",
+                        "id": 36600,
+                        "chemicalName": "别名1",
                         "chemicalUnit": "吨",
-                        "checkWeight": "",
+                        "checkWeight": 5,
+                        "checkVolume": "",
+                        "loadCheckWeight": "",
+                        "loadCheckVolume": ""
+                    },
+                    {
+                        "id": 36601,
+                        "chemicalName": "别名2",
+                        "chemicalUnit": "吨",
+                        "checkWeight": 5,
                         "checkVolume": "",
                         "loadCheckWeight": "",
                         "loadCheckVolume": ""
@@ -84,26 +95,19 @@ url:/app/confirm/driverLoadConfirmList
             }
         ],
         "prePage": 0,
-        "nextPage": 2,
+        "nextPage": 0,
         "isFirstPage": true,
-        "isLastPage": false,
+        "isLastPage": true,
         "hasPreviousPage": false,
-        "hasNextPage": true,
+        "hasNextPage": false,
         "navigatePages": 8,
         "navigatepageNums": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8
+            1
         ],
         "navigateFirstPage": 1,
-        "navigateLastPage": 8,
+        "navigateLastPage": 1,
         "firstPage": 1,
-        "lastPage": 8
+        "lastPage": 1
     },
     "message": "成功"
 }
