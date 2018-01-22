@@ -20,6 +20,7 @@ POST
 | --- | --- | --- | --- |
 | pageNum| Integer | 页码| TRUE |
 | pageSize| Integer | 每页最大数量| TRUE |
+| billNo| String| 运单号 | FALSE|
 
 ##### 响应参数
 

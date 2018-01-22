@@ -34,6 +34,7 @@ POST
 | chemicalName| String | 危化品名称 |
 | chemicalAliasUsing| String |常用危化品别名 |
 | unionCode| String | 联合国编码 |
+| chemicalUnit| String | 货物单位 |
 
 ##### 调用示例
 
@@ -85,6 +86,7 @@ url:/app/bsChemical/listChemicalAndChemicalUsing
                 "casName": "",
                 "secondaryDanger": "",
                 "remark": "",
+                "chemicalUnit": "吨",
                 "id": 64,
                 "companyId": 20000004,
                 "chemicalAliasUsing": "溴甲基丙烷"

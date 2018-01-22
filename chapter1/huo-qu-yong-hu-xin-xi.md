@@ -29,7 +29,7 @@ POST
 | companyName| String | 企业名称 |
 | companyType| String |企业类型（1.运输企业，2、生产企业，3：存储企业，4.销售企业，5 .消费企业）|
 | employeeId| String | 员工id |
-| employeeName| String | 企业名称 |
+| employeeName| String | 人员姓名 |
 | employeeType| String | 从业人员类型1：驾驶员；2：押运员；3：驾驶员和押运员 |
 | address| String数组 | 地址 |
 

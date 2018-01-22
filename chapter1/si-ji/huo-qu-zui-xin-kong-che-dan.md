@@ -18,7 +18,7 @@ POST
 
 | 参数名 | 类型 | 描述 | 是否必填 |
 | --- | --- | --- | --- |
-|vehicleId| Long| 车辆ID | FALSE|
+|vehicleId| Long| 常用车辆ID | FALSE|
 
 
 
