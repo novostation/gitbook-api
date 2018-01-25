@@ -1,4 +1,4 @@
-#### 司机广州取货保存卸货单
+#### 司机广州取货创建卸货单
 
 ##### 接口地址
 
@@ -23,13 +23,6 @@ POST
 | companyPhone| String| 地址| TRUE |
 | address| String| 地址| TRUE |
 | companyId| Integer | 危化品企业ID| TRUE |
-| car| JSON字符串| 调度信息 |TRUE |
-| vehicleId| Integer | 车辆ID| TRUE |
-|tailerVehicleId| Integer | 挂车ID |False|
-| driverId| Integer |司机ID|TRUE |
-| driverContactNo| String| 司机号码 |TRUE |
-| escortId|Integer | 押运员ID |TRUE |
-| escortContactNo| String| 押运员号码 |TRUE |
 | chemical| String| JSON数组 |TRUE |
 | chemicalId| String| 危化品ID |TRUE |
 | chemicalAliasUsing| String| 常用危化品别名 |TRUE |
@@ -59,13 +52,7 @@ url:/app/dyBill/saveDriverUnloadingBill
 		"billId": "71347",
 		"companyId": "20000001",
 		"companyPhone": "15920113404",
-		"address": "dadwa",
-		"car": {
-			"vehicleId": "2748126",
-			"tailerVehicleId": "2110646",
-			"driverId": "4786",
-			"escortId": "5137"
-		},
+		"address": "dadwa",		
 		"chemical": [{
 			"chemicalId": "3",
 			"chemicalAliasUsing": "别名1",

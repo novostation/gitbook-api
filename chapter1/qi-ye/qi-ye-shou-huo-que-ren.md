@@ -18,8 +18,9 @@ POST
 
 | 参数名 | 类型 | 描述 | 是否必填 |
 | --- | --- | --- | --- |
-| billUnitId| String| 待装货装货中标识| TRUE |
-| billAddressId| String| 运单号| FALSE|
+| billUnitId| Long| 运单收发货方ID| TRUE |
+| billAddressId| Long| 运单地址ID| FALSE|
+| ckeckRemark| String| 备注| FALSE|
 | chemical| String| JSON数组 |TRUE |
 | id| String| 货物ID |TRUE |
 | weight| String| 重量 |TRUE |
@@ -48,6 +49,7 @@ url:/app/confirm/companyUnloadConfirm
 	"data": {
 		"billUnitId": "32645",
 		"billAddressId": "33034",
+		"ckeckRemark":"备注",
 		"chemical": [{
 			"id": "35472",
 			"weight": "5",

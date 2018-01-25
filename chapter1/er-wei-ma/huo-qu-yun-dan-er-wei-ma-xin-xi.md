@@ -18,7 +18,7 @@ POST
 
 | 参数名 | 类型 | 描述 | 是否必填 |
 | --- | --- | --- | --- |
-| billId| LONG| 二维码ID| TRUE |
+| billNo| Sring| 运单号| TRUE |
 | transType| Integer | 1: 发货、装货2：收货、卸货 | FALSE|
 
 ##### 响应参数
@@ -41,7 +41,7 @@ POST
 ```
 url:/app/dyBill/getBillQrCodeInfo
 
-参数:{qrCodeId:283}
+参数:{billNo:283}
 ```
 
 ##### 响应示例
