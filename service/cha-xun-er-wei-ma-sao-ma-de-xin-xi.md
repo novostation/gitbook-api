@@ -20,7 +20,7 @@ POST
 | --- | --- | --- | --- |
 | billNo | String | 运单号 | TRUE|
 | billUnitId | Long | 运单收发货方id | TRUE|
-| addressId | Long | 运单收发地址id | TRUE|
+| billAddressId| Long | 运单收发地址id | TRUE|
 | addressType| Integer | 1: 发货、装货 2：收货、卸货 | TRUE|
 
 ##### 响应参数
@@ -68,7 +68,7 @@ POST
 ##### 调用示例
 
 ```
-url:/app/querybillNo?billNo=20170511029348&billUnitId=4094&addressType=1&addressId=4017
+url:/app/querybillNo?billNo=20170511029348&billUnitId=4094&addressType=1&billAddressId=4017
 ```
 
 ##### 响应示例
